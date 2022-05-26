@@ -1,0 +1,9 @@
+:root {
+    --primary-text: 'Roboto', sans-serif;
+    --secondary-text: 'Raleway', sans-serif;
+    --primary-text-color:;
+    --secondary-text-color:;
+}
+body {
+    font-family: var(--primary-text);
+}
