@@ -1,6 +1,8 @@
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
+    --primary-background-color: #2196F3;
+    --accent-text-color: #ffffff;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -10,39 +12,194 @@ body {
 ul {
     list-style: none;
 }
+
 /*шапка*/
+.header a {
+    text-decoration: none;
+}
 .header-nav a {
     color: var(--primary-text-color);
-    text-decoration: none;
+    
 }
 .header-nav a:hover, 
 .header-nav a:focus {
-    color: #2196F3;
+    color: var(--primary-background-color);
 }
 .header-list a {
     color: var(--primary-text-color);
-    text-decoration: none;
+    
 }
 
 .header-list a:hover,
 .header-list a:focus {
-    color: #2196F3;
+    color: var(--primary-background-color);
 }
-
-/*Кнопки*/
-.btn {
+.header-nav .nav-link.current {
+    color: var(--primary-background-color);
+}
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.web {
+    color: var(--primary-background-color);
+}
+.hero-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+}
+.service-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
-.btn:hover,
-.btn:focus {
-    color: #ffffff;
-    background-color: #2196F3;
+.service-btn:hover,
+.service-btn:focus {
+    color: var(--accent-text-color); 
+    background-color: var(--primary-background-color);
+}
+/*Особенности*/
+.qualities-item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color)
+}
+.qualities-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/*Чем мы занимаемся*/
+.work-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+/*Команда*/
+.team-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+.team-list h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
 }
 
+
+/*фильтр-кнопки Portfolio*/
+.filter-btn {
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--accent-text-color);
+    background-color: var(--primary-background-color);
+}
+/*иконки Portfolio*/
+.portfolio-list a {
+    text-decoration: none;
+}
+.portfolio-list h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color)
+}
+.portfolio-list p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
 /*Футер*/
+.footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
+.footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
 .footer-list a {
     color: var(--primary-text-color);
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .footer-list a:hover,
 .footer-list a:focus {
