@@ -19,24 +19,26 @@ ul {
 }
 .header-nav a {
     color: var(--primary-text-color);
-    
 }
+
 .header-nav a:hover, 
 .header-nav a:focus {
     color: var(--primary-background-color);
 }
+
 .header-list a {
     color: var(--primary-text-color);
-    
 }
 
 .header-list a:hover,
 .header-list a:focus {
     color: var(--primary-background-color);
 }
+
 .header-nav .nav-link.current {
     color: var(--primary-background-color);
 }
+
 .logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -47,9 +49,11 @@ ul {
     letter-spacing: 0.03em;
     color: #000000;
 }
+
 .web {
     color: var(--primary-background-color);
 }
+/*Мэйн imdex.html*/
 .hero-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -61,6 +65,7 @@ ul {
     text-transform: uppercase;
     color: var(--accent-text-color);
 }
+/*кнопка заказать услугу index.html*/
 .service-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -77,7 +82,7 @@ ul {
     color: var(--accent-text-color); 
     background-color: var(--primary-background-color);
 }
-/*Особенности*/
+/*Особенности index.html*/
 .qualities-item-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -95,9 +100,9 @@ ul {
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
-/*Чем мы занимаемся*/
+/*Чем мы занимаемся index.html*/
 .work-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -108,7 +113,7 @@ ul {
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
 }
-/*Команда*/
+/*Команда index.html*/
 .team-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -129,7 +134,16 @@ ul {
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
 }
-
+.team-list p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
 
 /*фильтр-кнопки Portfolio*/
 .filter-btn {
@@ -168,7 +182,7 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 /*Футер*/
 .footer-logo {
