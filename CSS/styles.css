@@ -5,7 +5,6 @@
     --accent-text-color: #ffffff;
 }
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
@@ -17,25 +16,46 @@ ul {
 .header a {
     text-decoration: none;
 }
-.header-nav a {
+.nav-link {
     color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-.header-nav a:hover, 
-.header-nav a:focus {
+.nav-link:hover, 
+.nav-link:focus {
     color: var(--primary-background-color);
 }
 
-.header-list a {
+.header-post {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.header-tel {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
-.header-list a:hover,
-.header-list a:focus {
+.header-post:hover,
+.header-post:focus {
+    color: var(--primary-background-color);
+}
+.header-tel:hover,
+.header-tel:focus {
     color: var(--primary-background-color);
 }
 
-.header-nav .nav-link.current {
+
+.nav-link.current {
     color: var(--primary-background-color);
 }
 
@@ -54,9 +74,10 @@ ul {
     color: var(--primary-background-color);
 }
 /*Мэйн imdex.html*/
+.hero {
+    background-color: #2F303A;
+}
 .hero-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -67,25 +88,20 @@ ul {
 }
 /*кнопка заказать услугу index.html*/
 .service-btn {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    align-items: center;
+    line-height: 1.85;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-}
-.service-btn:hover,
-.service-btn:focus {
-    color: var(--accent-text-color); 
+    cursor: pointer;
+    color: var(--accent-text-color);
     background-color: var(--primary-background-color);
 }
+
 /*Особенности index.html*/
-.qualities-item-title {
-    font-family: 'Roboto';
-    font-style: normal;
+.qualities-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
@@ -93,9 +109,7 @@ ul {
     text-transform: uppercase;
     color: var(--primary-text-color)
 }
-.qualities-item {
-    font-family: 'Roboto';
-    font-style: normal;
+.qualities-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.72;
@@ -104,8 +118,6 @@ ul {
 }
 /*Чем мы занимаемся index.html*/
 .work-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -115,8 +127,6 @@ ul {
 }
 /*Команда index.html*/
 .team-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -125,8 +135,6 @@ ul {
     color: var(--primary-text-color)
 }
 .team-list h3 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -135,8 +143,6 @@ ul {
     color: var(--primary-text-color)
 }
 .team-list p {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -148,13 +154,13 @@ ul {
 /*фильтр-кнопки Portfolio*/
 .filter-btn {
     color: var(--primary-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
 
 }
 .filter-btn:hover,
@@ -167,8 +173,6 @@ ul {
     text-decoration: none;
 }
 .portfolio-list h2 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -176,8 +180,6 @@ ul {
     color: var(--primary-text-color)
 }
 .portfolio-list p {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -185,6 +187,9 @@ ul {
     color: var(--secondary-text-color);
 }
 /*Футер*/
+.footer {
+    background-color: #2F303A;
+}
 .footer-logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -195,27 +200,33 @@ ul {
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
 }
-.footer p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.address{
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
 }
-.footer-list a {
+.footer-post {
     color: var(--primary-text-color);
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-list a:hover,
-.footer-list a:focus {
-    color: #2196F3;
+.footer-tel {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-post:hover,
+.footer-post:focus {
+    color: var(--primary-background-color);
+}
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--primary-background-color);
 }
