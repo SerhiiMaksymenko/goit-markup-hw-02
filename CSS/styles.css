@@ -200,8 +200,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
 }
-.address{
+address {
     font-style: normal;
+}
+.footer-address {
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
