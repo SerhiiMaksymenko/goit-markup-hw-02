@@ -154,6 +154,7 @@ body {
 }
 .filter-btn {
     color: var(--primary-text-color);
+    background-color: #F5F4FA;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -190,6 +191,9 @@ body {
 /*Футер*/
 .footer {
     background-color: #2F303A;
+}
+.footer-list {
+    list-style: none;
 }
 .footer-logo {
     text-decoration: none;
